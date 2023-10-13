@@ -8,11 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-      .carousel-contain{
-        background-color: white;
-      }
+
       .background-navbar{
         background-color: black;
+        color: white;
       }
       .color-button{
         background-color: black;
@@ -26,19 +25,30 @@
   <body>
 
     <!-- .navbar -->
- <nav class="navbar navbar-expand-lg navbar-light background-navbar sticky-top">
-  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-    <div class="container navbar-text">
-      <span class="navbar-brand mt-3" href="#page-top"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Audiowide"><p style="font-family: Audiowide, sans-serif; color: white;">TokoSaya.</span>
+<nav class="navbar navbar-expand-sm navbar-dark background-navbar sticky-top">
+  <div class="container">
+   <a class="navbar-brand mt-3"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Audiowide"><p style="font-family: Audiowide, sans-serif; color: white;">TokoSaya.</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" style="color: white;"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Pencarian" aria-label="Search">
+     <button class="btn color-button btn-secondary my-2 my-sm-0" type="submit">Carikan</button>
+    </form>
   </div>
 </div>
 </nav>
 <!-- .endnavbar -->
 
 <!-- .slider -->
-<div class="container-fluid carousel-contain py-5">
+      <div class="container-fluid carousel-contain py-5">
   <div class="container">
-<div id="carouselExampleIndicators" class="carousel slide col-lg-6 offset-3" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide col-lg-6 offset-lg-3" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -78,34 +88,29 @@
   </a>
 </div>
 </div>
+
 <!-- .endslider -->
 
 <!-- .button -->
-<div class="container-fluid py-5">
-<div class="container">
-  <div class="card" style="width: 70rem;">
-  <div class="card-body">
-    <h5 class="text-center">Rekomendasi Peralatan Masak</h5>
-   
-    <div class="container" align="center" >
-   <button type="button" class="btn color-button ">Panci</button>
-   <button type="button" class="btn color-button">Dandang</button>
-   <button type="button" class="btn color-button">Wajan</button>
-   <button type="button" class="btn color-button">Teplon</button>
+ <div class="border text-center container my-3 py-3" style="border-radius: 8px;">
+    <div class="col">
+    <h5>Rekomendasi Peralatan Masak</h5>
+    <br>
+     <button type="button" class="btn color-button btn-secondary ">Panci</button>
+     <button type="button" class="btn color-button btn-secondary">Dandang</button>
+     <button type="button" class="btn color-button btn-secondary">Wajan</button>
+     <button type="button" class="btn color-button btn-secondary">Teplon</button>
   </div>
 </div>
-</div>
-</div>
-</div>
-<!-- . endbutton -->
 
 <!-- .card -->
 <div class="container-fluid py-5">
 <div class="container">
 
- <div class="row">
+ <div class="row gy-3 my-3">
 
-    <div class="col-3">
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      
     <div class="card">
   <img src="foto/wajan.jpg" class="card-img-top" alt="...">
   <div class="card-body">
@@ -119,12 +124,12 @@
   </div>
   <a href="#" class="btn btn-secondary btn-lg disabled btn-sm" aria-disabled="true">Jakarta</a>
   <br><br>
-    <a href="#" class="btn btn-dark">Detail</a>
+    <a href="#" class="btn color-button btn-secondary ">Detail</a>
   </div>
 </div>
   </div>
 
-<div class="col-3">
+<div class="col-sm-6 col-md-4 col-lg-3">
     <div class="card">
   <img src="foto/panci5.jpg" class="card-img-top" alt="...">
   <div class="card-body">
@@ -138,12 +143,12 @@
   </div>
   <a href="#" class="btn btn-secondary btn-lg disabled btn-sm" aria-disabled="true">Bekasi</a>
   <br><br>
-    <a href="#" class="btn btn-dark">Detail</a>
+    <a href="#" class="btn color-button btn-secondary ">Detail</a>
   </div>
 </div>
   </div>
 
-  <div class="col-3">
+  <div class="col-sm-6 col-md-4 col-lg-3">
     <div class="card">
   <img src="foto/panci6.jpg" class="card-img-top" alt="...">
   <div class="card-body">
@@ -157,12 +162,12 @@
   </div>
   <a href="#" class="btn btn-secondary btn-lg disabled btn-sm" aria-disabled="true">Semarang</a>
   <br><br>
-    <a href="#" class="btn btn-dark">Detail</a>
+    <a href="Detail.html" class="btn color-button btn-secondary ">Detail</a>
   </div>
 </div>
   </div>
 
-  <div class="col-3">
+  <div class="col-sm-6 col-md-4 col-lg-3">
     <div class="card">
   <img src="foto/teplon2.jpg" class="card-img-top" alt="...">
   <div class="card-body">
@@ -176,7 +181,7 @@
   </div>
   <a href="#" class="btn btn-secondary btn-lg disabled btn-sm" aria-disabled="true">Surabaya</a>
   <br><br>
-    <a href="detail.html" class="btn btn-dark ">Detail</a>
+    <a href="Detail.html" class="btn color-button btn-secondary ">Detail</a>
   </div>
 </div>
   </div>
