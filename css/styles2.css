@@ -1,0 +1,23 @@
+ body {
+    background-color: #f4f4f4;
+    background-color: lightgray;
+}
+
+.login-container {
+    margin-top: 100px;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-header {
+    text-align: center;
+}
+
+.mybtn{
+    background-color: black;
+}
